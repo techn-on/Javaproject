@@ -1,3 +1,5 @@
+package word;
+
 public interface ICRUD {
     public  Object add();
     public int update(Object obj);

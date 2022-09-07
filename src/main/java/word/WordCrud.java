@@ -1,3 +1,5 @@
+package word;
+
 import java.util.*;
 public class WordCrud implements ICRUD{
     ArrayList<Word> list;

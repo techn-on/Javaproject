@@ -22,7 +22,7 @@ public class WordCrud implements ICRUD{
         public  void addWord() {
         Word one = (Word) add();
         list.add(one);
-        System.out.println("새 단어장에 단어가 추가 되었습니다. ");
+        System.out.println("\n새 단어장에 단어가 추가 되었습니다. ");
         }
     @Override
     public int update(Object obj){

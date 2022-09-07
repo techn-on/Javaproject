@@ -4,14 +4,14 @@ import java.util.*;
 
 
 public class WordManager {
-    Scanner keyboard= new Scanner(System.in);
+    Scanner s= new Scanner(System.in);
     WordCrud wordCrud;
 
     WordManager(){
-        wordCrud= new WordCrud(keyboard);
+        wordCrud= new WordCrud(s);
     }
     public int selectMenu(){
-        System.out.println("*** 영단어 마스터 ***\n " +
+        System.out.println(
                 "************************\n" +
                "1. 모든 단어 보기\n" +
                 "2. 수준별 단어 보기\n" +
@@ -23,7 +23,7 @@ public class WordManager {
                 "0. 나가기\n" +
                 "************************\n" +
                 "=> 원하는 메뉴는 ? ");
-       return keyboard.nextInt();
+       return s.nextInt();
     }
     public void start (){
         while(true){
